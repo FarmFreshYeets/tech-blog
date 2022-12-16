@@ -1,0 +1,59 @@
+{
+  "name": "14-challenge",
+  "version": "1.0.0",
+  "description": "",
+  "main": "server.js",
+  "dependencies": {
+    "balanced-match": "^1.0.2",
+    "bcrypt": "^5.1.0",
+    "brace-expansion": "^2.0.1",
+    "connect-session-sequelize": "^7.1.5",
+    "denque": "^2.1.0",
+    "dotenv": "^16.0.3",
+    "express-handlebars": "^6.0.6",
+    "express-session": "^1.17.3",
+    "fs.realpath": "^1.0.0",
+    "generate-function": "^2.3.1",
+    "glob": "^8.0.3",
+    "graceful-fs": "^4.2.10",
+    "handlebars": "^4.7.7",
+    "iconv-lite": "^0.6.3",
+    "inflight": "^1.0.6",
+    "inherits": "^2.0.4",
+    "is-property": "^1.0.2",
+    "long": "^4.0.0",
+    "lru-cache": "^6.0.0",
+    "minimatch": "^5.1.1",
+    "minimist": "^1.2.7",
+    "mysql2": "^2.3.3",
+    "named-placeholders": "^1.1.2",
+    "neo-async": "^2.6.2",
+    "once": "^1.4.0",
+    "pseudomap": "^1.0.2",
+    "safer-buffer": "^2.1.2",
+    "seq-queue": "^0.0.5",
+    "sequelize": "^6.27.0",
+    "source-map": "^0.6.1",
+    "sqlstring": "^2.3.3",
+    "uglify-js": "^3.17.4",
+    "wordwrap": "^1.0.0",
+    "wrappy": "^1.0.2",
+    "yallist": "^4.0.0"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js",
+    "seed": "node seeds/seed.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/FarmFreshYeets/tech-blog.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/FarmFreshYeets/tech-blog/issues"
+  },
+  "homepage": "https://github.com/FarmFreshYeets/tech-blog#readme"
+}
