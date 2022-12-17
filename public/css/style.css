@@ -1,0 +1,22 @@
+.invisible {
+    display: none;
+}
+
+.post-title {
+    display: inline;
+}
+
+.post-user {
+    display: inline;
+    font-size: 16px;
+    padding-top: 15px;
+}
+
+.post {
+    color: black;
+}
+
+.post:hover {
+    text-decoration: none;
+    color: black;
+}

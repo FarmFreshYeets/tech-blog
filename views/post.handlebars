@@ -1,13 +1,21 @@
-<div class="card-body">
-    <div class="card-title">
-        <h2 class="col-md-5 post-title">{{title}}</h2>
-        <h3 class="post-user">Posted by {{user.name}} on {{date_posted}}</h3>
+<div class="card">
+    <div class="card-header display-flex justify-space-between">
+        <h2 class="post-title">{{title}}</h2>
+        <h3 class="post-user">Posted by {{user.name}} on {{format_date date_posted}}</h3>
     </div>
-    <p class="post-body card-text">{{body}}</p>
+    <p class="post-body card-body">{{body}}</p>
 </div>
-{{#each comments as |comment| }}
-<div class="card-body">
-    <p class="comment-body card-text">{{comment.body}}</p>
-    <h3 class="comment-user card-title">-{{comment.user.name}}, {{comment.date_posted}}</h3>
+<form id="add-comment-form">
+    <input placeholder="Add comment here..." id="comment-body">
+    <button type="submit" class="btn btn-primary" data-id="{{id}}">Comment</button>
+</form>
+{{!-- {{#each comments as |comment| }}
+<div class="card">
+    <p class="comment-body card-header">{{comment.body}}</p>
+    <h3 class="comment-user card-body">-{{comment.user.name}}, {{format_date comment.date_posted}}</h3>
+    {{#if comment.user.name}}
+    <button class="btn btn-sm btn-danger del-btn" data-id="{{comment.id}}" post-id="{{id}}">DELETE</button>
 </div>
 {{/each}}
+
+<script src="./js/comment.js"></script> --}}
