@@ -1,0 +1,15 @@
+{{#each posts as |post| }}
+<a href="/post/{{post.id}}" class="card row mb-4 post">
+    <div class="card-body">
+        <div class="card-title">
+            <h2 class="col-md-5 post-title">{{post.title}}</h2>
+            <h3 class="post-user">Posted on {{post.date_posted}}</h3>
+        </div>
+        <p class="post-body card-text">{{post.body}}</p>
+    </div>
+</a>
+{{/each}}
+
+<button id="new-post-btn">Add New Post</button>
+
+<script src="./js/dashboard.js"></script>
