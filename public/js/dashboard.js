@@ -1,14 +1,15 @@
-const newPostButton = (event) => {
-    event.preventDefault()
+// const newPostButton = (event) => {
+//     event.preventDefault()
 
-    document.querySelector('#new-post-form').classList.remove('invisible')
-}
+//     document.querySelector('#new-post-form').classList.remove('invisible')
+// }
 
-const editPostButton = (event) => {
-    event.preventDefault()
+// const editPostButton = async (event) => {
+//     event.preventDefault()
 
-    
-}
+//     const id = event.target.getAttribute('data-id')
+//     document.location.replace('/editpost')
+// }
 
 const newFormHandler = async (event) => {
     event.preventDefault();
