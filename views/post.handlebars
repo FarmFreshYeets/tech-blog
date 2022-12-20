@@ -5,17 +5,21 @@
     </div>
     <p class="post-body card-body">{{body}}</p>
 </div>
-<form id="add-comment-form">
-    <input placeholder="Add comment here..." id="comment-body">
-    <button type="submit" class="btn btn-primary" data-id="{{id}}">Comment</button>
+{{#if logged_in}}
+<form class="form" id="add-comment-form">
+    <div class="form-group">
+        <label for="comment-body">Add Comment Here...</label>
+        <textarea class="form-input" id="comment-body" name="comment-body"></textarea>
+    </div>
+    <div class="form-group">
+        <button type="submit" class="btn btn-primary" data-id="{{id}}">Comment</button>
+    </div>
 </form>
-{{!-- {{#each comments as |comment| }}
-<div class="card">
-    <p class="comment-body card-header">{{comment.body}}</p>
-    <h3 class="comment-user card-body">-{{comment.user.name}}, {{format_date comment.date_posted}}</h3>
-    {{#if comment.user.name}}
-    <button class="btn btn-sm btn-danger del-btn" data-id="{{comment.id}}" post-id="{{id}}">DELETE</button>
-</div>
+{{else}}
+<a href="/login">Log in to comment</a>
+{{/if}}
+{{#each comments as |comment| }}
+{{> comment-details}}
 {{/each}}
 
-<script src="./js/comment.js"></script> --}}
+<script src="./js/comment.js"></script>
